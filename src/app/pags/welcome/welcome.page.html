@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Bem-vindo :)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <section class="app-welcome m-2 mt-5">
+
+    <p>
+      Olá, para proseguir informe seu nome.
+    </p>
+
+    <form [formGroup]="formSingin" (ngSubmit)="submitUser()">
+
+      <ion-item>
+        <ion-label position="floating">Qual o seu nome?</ion-label>
+        <ion-input type='text' formControlName="name" required></ion-input>
+      </ion-item>
+
+
+      <section class="d-flex justify-content-end mt-2 mr-2">
+        <ion-button expand="full" type='submit'>Salvar</ion-button>
+      </section>
+    </form>
+
+  </section>
+
+</ion-content>

@@ -1,0 +1,18 @@
+<ion-app>
+
+  <ion-router-outlet>
+  </ion-router-outlet>
+
+  <ng-container *ngIf="!firstAcess; else viewMenuFloating">
+
+  </ng-container>
+  <ng-template #viewMenuFloating>
+
+    <app-menu-floating>
+    </app-menu-floating>
+
+  </ng-template>
+
+
+
+</ion-app>

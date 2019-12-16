@@ -1,0 +1,15 @@
+export interface IBook {
+    ativo : boolean ,
+    dataInclusao : Date ,
+    dataExclusao : Date,
+    titulo : string,
+    autor : string,
+    categoria : string,
+    dataAquisicao : string,
+    dataInicioLeitura : string,
+    dataTerminoLeitura : string,
+    numeroPaginas : string,
+    valor : string,
+    resumo : string,
+    imagem : string,
+}
