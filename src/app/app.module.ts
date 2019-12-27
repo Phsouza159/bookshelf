@@ -10,17 +10,19 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 // COMPONENTES
 import { AppComponent } from './app.component';
 import { MenuFloatingComponent } from './component/menu-floating/menu-floating.component';
-
 import { AppRoutingModule } from './app-routing.module';
-
 import { IonicStorageModule } from '@ionic/storage';
+
+// PAGES
+import { LibraryPage } from './pags/library/library.page'
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuFloatingComponent
+    MenuFloatingComponent,
   ],
-  entryComponents: [],
+  entryComponents: [
+  ],
   imports: [
     BrowserModule, 
     IonicModule.forRoot(), 
@@ -32,6 +34,8 @@ import { IonicStorageModule } from '@ionic/storage';
   providers: [
     StatusBar,
     SplashScreen,
+    LibraryPage,
+
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
